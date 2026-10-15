@@ -8,7 +8,7 @@ GRUPO = -1003764262854
 TOPIC = 717696
 CANAL = 'https://t.me/Horny_J'
 
-app = Flask(name)
+app = Flask(__name__)
 @app.route('/')
 def home(): return "Bot vivo"
 threading.Thread(target=lambda: app.run(host='0.0.0.0', port=10000), daemon=True).start()
